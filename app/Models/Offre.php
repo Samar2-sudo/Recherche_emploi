@@ -15,6 +15,7 @@ class Offre extends Model
         'poste',
         'description',
         'entreprise_associee',
+        'categorie_id',
         'competences',
         'emplacement',
         'date_de_publication',
@@ -25,5 +26,9 @@ class Offre extends Model
     public function entreprise()
     {
         return $this->belongsTo(Entreprise::class, 'entreprise_associee');
+    }
+    public function categorie()
+    {
+        return $this->belongsTo(Categorie::class, 'categorie_id');
     }
 }

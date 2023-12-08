@@ -11,6 +11,8 @@ use Illuminate\Http\Request;
 
 class OffreController extends Controller
 {
+    // app/Http/Controllers/OffreController.php
+
     public function index()
     {
         $offres = Offre::all();
@@ -26,6 +28,8 @@ class OffreController extends Controller
         // Pass the data to the view
         return view('offres.create', compact('entreprises', 'categories'));
     }
+
+
 
 
     public function create()
@@ -55,13 +59,27 @@ class OffreController extends Controller
 
         return redirect()->route('offres.index')->with('success', 'Offre created successfully!');
     }
-
-
-
-    public function show(Offre $offre)
+    public function show()
     {
-        return view('offres.show', compact('offre'));
+        $offre = Offre::all();
+        return view('offresshow', compact('offre'));
     }
+    public function search(Request $request)
+    {
+        $offres = Offre::where('poste', 'LIKE', '%' . $request->keywords . '%')
+            ->orWhere('competences', 'LIKE', '%' . $request->keywords . '%')
+            ->orWhere('entreprise_associee', 'LIKE', '%' . $request->keywords . '%')
+            ->get();
+
+        return view('offresshow')->with('offres', $offres);
+    }
+    public function welcome()
+    {
+        $offre = Offre::latest()->take(4)->get();
+
+        return view('welcome')->with('offres', $offre);
+    }
+
 
     /*public function edit(Offre $offre)
     {

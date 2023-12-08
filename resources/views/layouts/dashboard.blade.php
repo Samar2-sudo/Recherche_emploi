@@ -8,10 +8,10 @@
     <meta name="keywords"
         content="tailwind,tailwindcss,tailwind css,css,starter template,free template,admin templates, admin template, admin dashboard, free tailwind templates, tailwind example">
     <!-- Css -->
-    <link rel="stylesheet" href="assets/dist/styles.css">
-    <link rel="stylesheet" href="assets/dist/all.css">
+    <link rel="stylesheet" href="{{ asset('assets/dist/styles.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/dist/all.css') }}">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,600,600i,700,700i" rel="stylesheet">
-    <title>Dashboard | Tailwind Admin</title>
+    <title>Dashboard | JobFinder</title>
 </head>
 
 <body>
@@ -24,16 +24,14 @@
                 <div class="flex justify-between">
                     <div class="p-1 mx-3 inline-flex items-center">
                         <i class="fas fa-bars pr-2 text-white" onclick="sidebarToggle()"></i>
-                        <h1 class="text-white p-2">Logo</h1>
+                        <h1 class="text-white p-2">JobFinder</h1>
                     </div>
                     <div class="p-1 flex flex-row items-center">
                         <a href="https://github.com/tailwindadmin/admin"
-                            class="text-white p-2 mr-2 no-underline hidden md:block lg:block">Github</a>
+                            class="text-white p-2 mr-2 no-underline hidden md:block lg:block"></a>
 
-                        <img onclick="profileToggle()" class="inline-block h-8 w-8 rounded-full"
-                            src="https://avatars0.githubusercontent.com/u/4323180?s=460&v=4" alt="">
                         <a href="#" onclick="profileToggle()"
-                            class="text-white p-2 no-underline hidden md:block lg:block">Adam Wathan</a>
+                            class="text-white p-2 no-underline hidden md:block lg:block"></a>
                         <div id="ProfileDropDown"
                             class="rounded hidden shadow-md bg-white absolute pin-t mt-12 mr-1 pin-r">
                             <ul class="list-reset">

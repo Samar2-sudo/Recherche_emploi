@@ -37,4 +37,11 @@ class CategoryController extends Controller
 
         return redirect()->route('categories.index')->with('success', 'Category deleted successfully');
     }
+
+    public function show()
+    {
+        $categories = Categorie::all();
+
+        return view('home', compact('categories'));
+    }
 }
