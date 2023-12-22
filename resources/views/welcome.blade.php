@@ -65,7 +65,7 @@ https://templatemo.com/tm-569-edu-meeting
                         <ul class="nav">
                             <li class="scroll-to-section"><a href="/" class="active">Home</a></li>
                             <li><a href="offres/show">Offres</a></li>
-                            <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>
+                            <li class="scroll-to-section"><a href="/">Contact Us</a></li>
                             <li class="nav-item">
                                 <form action="/" method="GET" class="d-flex">
                                     @csrf
@@ -160,98 +160,78 @@ https://templatemo.com/tm-569-edu-meeting
                             @endforeach
                         </ul>
                         <div class="main-button-red">
-                            <a href="">All categories</a>
+                            <a href="offres/show">All offers</a>
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-8">
                     <div class="row">
                         <div class="col-lg-6">
                             <div class="meeting-item">
                                 <div class="thumb">
-                                    <div class="price">
-                                        <span>$22.00</span>
-                                    </div>
-                                    <a href="offres/show"><img src="home.assets/images/meeting-01.jpg"
-                                            alt="New Lecturer Meeting"></a>
+
+
                                 </div>
                                 <div class="down-content">
                                     <div class="date">
-                                        <h6>Nov <span>10</span></h6>
+                                        <h6>Nov <span>16</span></h6>
                                     </div>
-                                    <a href="offres/show">
-                                        <h4>New Lecturers Meeting</h4>
+                                    <a href="meeting-details.html">
+                                        <h4>développeur mobile</h4>
                                     </a>
-                                    <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
+                                    <p> Entreprise: Instead<br> Compétences: Java, PHP,
+                                        Symfony<br> Date de clôture:
+                                        2023-11-30</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="meeting-item">
                                 <div class="thumb">
-                                    <div class="price">
-                                        <span>$36.00</span>
-                                    </div>
-                                    <a href="meeting-details.html"><img src="assets/images/meeting-02.jpg"
-                                            alt="Online Teaching"></a>
                                 </div>
                                 <div class="down-content">
                                     <div class="date">
-                                        <h6>Nov <span>24</span></h6>
+                                        <h6>Nov <span>01</span></h6>
                                     </div>
                                     <a href="meeting-details.html">
-                                        <h4>Online Teaching Techniques</h4>
+                                        <h4>hjdbchsbd</h4>
                                     </a>
-                                    <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
+                                    <p>Entreprise: RTS : réseaux de télécommunications et sécurité <br>
+
+                                        Compétences: kdndkdksz <br>
+
+                                        Date de clôture: 2023-11-19<br></p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-6">
                             <div class="meeting-item">
                                 <div class="thumb">
-                                    <div class="price">
-                                        <span>$14.00</span>
-                                    </div>
-                                    <a href="meeting-details.html"><img src="assets/images/meeting-03.jpg"
-                                            alt="Higher Education"></a>
                                 </div>
                                 <div class="down-content">
                                     <div class="date">
-                                        <h6>Nov <span>26</span></h6>
+                                        <h6>OCT <span>12</span></h6>
                                     </div>
                                     <a href="meeting-details.html">
-                                        <h4>Higher Education Conference</h4>
+                                        <h4>dkl,sk,ks,q</h4>
                                     </a>
-                                    <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
+                                    <p>Entreprise: Instead <br>
+
+                                        Compétences: kdjdnd <br>
+
+                                        Date de clôture: 2023-11-26</p>
                                 </div>
+
                             </div>
+
                         </div>
-                        <div class="col-lg-6">
-                            <div class="meeting-item">
-                                <div class="thumb">
-                                    <div class="price">
-                                        <span>$48.00</span>
-                                    </div>
-                                    <a href="meeting-details.html"><img src="assets/images/meeting-04.jpg"
-                                            alt="Student Training"></a>
-                                </div>
-                                <div class="down-content">
-                                    <div class="date">
-                                        <h6>Nov <span>30</span></h6>
-                                    </div>
-                                    <a href="meeting-details.html">
-                                        <h4>Student Training Meetup</h4>
-                                    </a>
-                                    <p>Morbi in libero blandit lectus<br>cursus ullamcorper.</p>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
 
 
 
@@ -307,19 +287,19 @@ https://templatemo.com/tm-569-edu-meeting
                         <ul>
                             <li>
                                 <h6>Phone Number</h6>
-                                <span>010-020-0340</span>
+                                <span>+216 52133217</span>
                             </li>
                             <li>
                                 <h6>Email Address</h6>
-                                <span>info@meeting.edu</span>
+                                <span>JobFinder@gmail.com</span>
                             </li>
                             <li>
                                 <h6>Street Address</h6>
-                                <span>Rio de Janeiro - RJ, 22795-008, Brazil</span>
+                                <span>Rades </span>
                             </li>
                             <li>
                                 <h6>Website URL</h6>
-                                <span>www.meeting.edu</span>
+                                <span>www.JobFinder.com</span>
                             </li>
                         </ul>
                     </div>
@@ -327,7 +307,7 @@ https://templatemo.com/tm-569-edu-meeting
             </div>
         </div>
         <div class="footer">
-            <p>Copyright © 2022 Edu Meeting Co., Ltd. All Rights Reserved.
+            <p>Copyright © 2023 JobFinder , Ltd. All Rights Reserved.
                 <br>
                 Design: <a href="https://templatemo.com" target="_parent" title="free css templates">TemplateMo</a>
                 <br>

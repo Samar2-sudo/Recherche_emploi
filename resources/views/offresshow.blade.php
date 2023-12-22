@@ -58,15 +58,15 @@ https://templatemo.com/tm-569-edu-meeting
                 <div class="col-12">
                     <nav class="main-nav">
                         <!-- ***** Logo Start ***** -->
-                        <a href="index.html" class="logo">
+                        <a href="/" class="logo">
                             JobFinder
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
                         <ul class="nav">
                             <li><a href="/" class="active">Home</a></li>
-                            <li><a href="offres/show">Offres</a></li>
-                            <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>
+                            <li><a href="/">Offres</a></li>
+                            <li class="scroll-to-section"><a href="/">Contact Us</a></li>
                             @guest
                                 <li class="nav-item">
                                     <a class="nav-link" href="/login">Login</a>
@@ -103,8 +103,8 @@ https://templatemo.com/tm-569-edu-meeting
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h6>Here are our upcoming meetings</h6>
-                    <h2>Upcoming Meetings</h2>
+                    <h6>These are </h6>
+                    <h2>all the offers</h2>
                 </div>
             </div>
         </div>

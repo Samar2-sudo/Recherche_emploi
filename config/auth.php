@@ -41,6 +41,10 @@ return [
             'provider' => 'users',
         ],
 
+        'entreprise' => [
+            'driver' => 'session',
+            'provider' => 'entreprises',
+        ],
         'api' => [
             'driver' => 'token',
             'provider' => 'users',
@@ -51,12 +55,10 @@ return [
             'driver' => 'session',
             'provider' => 'admins', // You need to define an 'admins' provider
         ],
-
-        'entreprise' => [
-            'driver' => 'session',
-            'provider' => 'entreprises',
-        ],
     ],
+
+
+
 
 
     'providers' => [
@@ -65,16 +67,18 @@ return [
             'model' => App\Models\User::class,
         ],
 
-        'admins' => [
-            'driver' => 'eloquent',
-            'model' => App\Models\Admin::class,
-        ],
-
         'entreprises' => [
             'driver' => 'eloquent',
             'model' => App\Models\Entreprise::class,
         ],
+        'admins' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Admin::class,
+        ],
     ],
+
+
+
 
 
     // 'users' => [

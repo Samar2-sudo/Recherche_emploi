@@ -52,10 +52,13 @@ Route::get('/offres/destroy', [OffreController::class, 'destroy'])->name('offres
 Route::resource('offres', OffreController::class);
 Route::get('/offres', [OffreController::class, 'show'])->name('offresshow');
 Route::get('/', [OffreController::class, 'show'])->name('offresshow');
-Route::get('/welcome', [OffreController::class, 'welcome'])->name('welcome');
 
 use App\Http\Controllers\EntrepriseController;
 
 Route::get('/entreprise/index', [EntrepriseController::class, 'index'])->name('entreprise.index');
 
 Route::get('/', [CategoryController::class, 'show'])->name('home');
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

@@ -5,7 +5,9 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{ __('Categories') }}</div>
+                    <a href="{{ route('categories.create') }}" class="btn btn-success">Create</a>
+
+                    <div class="card-header">{{ __('') }}</div>
 
                     <div class="card-body">
                         <table class="table">
@@ -27,7 +29,9 @@
                                                 style="display: inline;">
                                                 @csrf
                                                 @method('DELETE')
+
                                                 <button type="submit" class="btn btn-danger">Delete</button>
+
                                             </form>
                                         </td>
                                     </tr>

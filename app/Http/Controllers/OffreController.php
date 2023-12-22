@@ -29,9 +29,6 @@ class OffreController extends Controller
         return view('offres.create', compact('entreprises', 'categories'));
     }
 
-
-
-
     public function create()
     {
         return view('offres.create');
@@ -75,10 +72,11 @@ class OffreController extends Controller
     }
     public function welcome()
     {
-        $offre = Offre::latest()->take(4)->get();
-
-        return view('welcome')->with('offres', $offre);
+        $offres = Offre::latest()->take(4)->get();
+        return view('welcome', compact('offres'));
     }
+
+
 
 
     /*public function edit(Offre $offre)

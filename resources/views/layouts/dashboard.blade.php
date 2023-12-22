@@ -23,7 +23,7 @@
             <header class="bg-nav">
                 <div class="flex justify-between">
                     <div class="p-1 mx-3 inline-flex items-center">
-                        <i class="fas fa-bars pr-2 text-white" onclick="sidebarToggle()"></i>
+                        <i onclick="sidebarToggle()"></i>
                         <h1 class="text-white p-2">JobFinder</h1>
                     </div>
                     <div class="p-1 flex flex-row items-center">
@@ -64,27 +64,22 @@
                         <li class="w-full h-full py-3 px-2 border-b border-light-border">
                             <a href="{{ route('categories.index') }}"
                                 class="font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
-                                <i class="fas fa-list float-left mx-2"></i>
                                 Categories
-                                <span><i class="fa fa-angle-right float-right"></i></span>
+
                             </a>
                         </li>
 
                         <li class="w-full h-full py-3 px-2 border-b border-light-border">
                             <a href="{{ route('entreprise.index') }}"
                                 class="font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
-                                <i class="fas fa-building float-left mx-2"></i>
                                 Entreprises
-                                <span><i class="fa fa-angle-right float-right"></i></span>
                             </a>
                         </li>
 
                         <li class="w-full h-full py-3 px-2 border-b border-light-border">
                             <a href="{{ route('offres.index') }}"
                                 class="font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
-                                <i class="fas fa-file float-left mx-2"></i>
                                 Offres
-                                <span><i class="fa fa-angle-right float-right"></i></span>
                             </a>
                         </li>
 
@@ -92,9 +87,7 @@
                         <li class="w-full h-full py-3 px-2 border-b border-light-border">
                             <a href="{{ route('users.index') }}"
                                 class="font-sans font-hairline hover:font-normal text-sm text-nav-item no-underline">
-                                <i class="fas fa-users float-left mx-2"></i>
                                 Users
-                                <span><i class="fa fa-angle-right float-right"></i></span>
                             </a>
                         </li>
                         <!-- End of New Users Button -->
